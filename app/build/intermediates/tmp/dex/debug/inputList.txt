@@ -1,0 +1,5 @@
+C:\Users\ssm\AndroidstudioProjects\tetris\app\build\intermediates\classes\debug
+C:\Users\ssm\AndroidstudioProjects\tetris\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-a710e577cbcc5b9c24c85b2f28c89d8d38dfd293.jar
+C:\Users\ssm\AndroidstudioProjects\tetris\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-a811b6f52489237ffe64682030054f9ae4d3c5b9.jar
+C:\Users\ssm\AndroidstudioProjects\tetris\app\build\intermediates\pre-dexed\debug\classes-8b96797669bc5434e3b4d93fcda596419f6fb22c.jar
+C:\Users\ssm\AndroidstudioProjects\tetris\app\build\intermediates\pre-dexed\debug\classes-c445d4fd4dddd8c733240fdc0f693d812748efc0.jar

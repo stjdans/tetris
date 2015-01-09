@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <TableRow
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="게임속도"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup android:id="@+id/group1" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="3000"
+                android:text="느리게" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2000"
+                android:text="중간" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="700"
+                android:text="빠르게" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="행(세로) 크기"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup android:id="@+id/group2" >
+
+            <RadioButton
+                android:id="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="12" />
+
+            <RadioButton
+                android:id="@+id/row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15" />
+
+            <RadioButton
+                android:id="@+id/row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="열(가로) 크기"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup android:id="@+id/group3" >
+
+            <RadioButton
+                android:id="@+id/col1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="7" />
+
+            <RadioButton
+                android:id="@+id/col2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/col3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="블록 크기"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup android:id="@+id/group4" >
+
+            <RadioButton
+                android:id="@+id/block1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="15"
+                android:text="작게" />
+
+            <RadioButton
+                android:id="@+id/block2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="20"
+                android:text="기본" />
+
+            <RadioButton
+                android:id="@+id/block3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="25"
+                android:text="크게" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="저장" />
+    </TableRow>
+
+</TableLayout>
