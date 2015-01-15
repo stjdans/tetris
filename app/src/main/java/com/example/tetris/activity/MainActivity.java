@@ -12,9 +12,6 @@ import com.example.tetris.config.GameConfig;
 
 public class MainActivity extends Activity implements OnClickListener {
     public static final int REQUEST_CONFIG = 1;
-    public static final int REQUEST_SEE = 2;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +27,7 @@ public class MainActivity extends Activity implements OnClickListener {
         config.setOnClickListener(this);
         result.setOnClickListener(this);
         fight.setOnClickListener(this);
+        GameConfig.size = GameConfig.SIZE_DEFAULT;
     }
 
     @Override
@@ -43,10 +41,11 @@ public class MainActivity extends Activity implements OnClickListener {
         switch (requestCode) {
             case REQUEST_CONFIG:
                 if (resultCode == RESULT_OK) {
+                    GameConfig.size = GameConfig.SIZE_DEFAULT;
                     int level = data.getIntExtra("level", 3000);
-                    int row = data.getIntExtra("row", 12);
+                    int row = data.getIntExtra("row", 11);
                     int col = data.getIntExtra("col", 7);
-                    int block = data.getIntExtra("block", 20);
+                    int block = data.getIntExtra("block", 15);
 
                     GameConfig.speed = level;
                     GameConfig.row = row;
@@ -58,6 +57,11 @@ public class MainActivity extends Activity implements OnClickListener {
         }
         super.onActivityResult(requestCode, resultCode, data);
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
     @Override

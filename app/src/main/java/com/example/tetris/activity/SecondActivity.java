@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.tetris.config.GameConfig;
 import com.example.tetris.env.GDisplay;
 import com.example.tetris.env.GTable;
 import com.example.tetris.view.GameView;
@@ -81,7 +82,12 @@ public class SecondActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
-		super.onDestroy();
+        super.onDestroy();
 	}
-	
+
+    @Override
+    public void onBackPressed() {
+        GameConfig.size = GameConfig.SIZE_DEFAULT;
+        super.onBackPressed();
+   }
 }

@@ -31,7 +31,7 @@ public class ResponseFrag extends Fragment {
         super.onActivityCreated(savedInstanceState);
         text = (TextView) getView().findViewById(R.id.response_text);
         request_bt = (Button) getView().findViewById(R.id.request_bt);
-//        text.setText("응답 프래그먼트 생성");
+        text.setText("응답 프래그먼트 생성");
         text.setText("");
     }
 }

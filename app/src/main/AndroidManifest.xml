@@ -2,22 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tetris"
     android:versionCode="1"
-    android:versionName="1.0">
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="18" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="tetris"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.tetris.activity.MainActivity"
-            android:label="tetris">
+            android:name=".activity.MainActivity"
+            android:label="tetris" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,14 +35,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.tetris.activity.SecondActivity"
-            android:screenOrientation="landscape">
-
+            android:name=".activity.SecondActivity"
+            android:screenOrientation="landscape" >
         </activity>
-        <activity android:name="com.example.tetris.activity.ConfigActivity"></activity>
-        <activity android:name="com.example.tetris.activity.ResultActivity"></activity>
-        <activity android:name="com.example.tetris.activity.FightActivity"></activity>
-    </application>
+        <activity android:name=".activity.ConfigActivity" />
+        <activity android:name=".activity.ResultActivity" />
+        <activity android:name=".activity.FightActivity" />
 
+    </application>
 
 </manifest>

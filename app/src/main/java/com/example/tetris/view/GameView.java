@@ -35,10 +35,11 @@ import com.example.tetris.shape.ShapeFactory;
 import java.util.List;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+/*
     public static final int GAME_READY = 0;
     public static final int GAME_START = 1;
     public static final int GAME_END = 2;
-
+*/
     SurfaceViewThread thread;
     ShapeFactory factory;
     GTable gMap;
@@ -60,16 +61,18 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
         super(context);
         setBackgroundColor(Color.WHITE);
         getHolder().addCallback(this);
-
         this.context = context;
+
         DisplayMetrics dm = getResources().getDisplayMetrics();
         int dis_width = GameConfig.dis_width = dm.widthPixels;
         int dis_height = GameConfig.dis_height = dm.heightPixels;
+        int size = GameConfig.optimizeBlockSize(dm.densityDpi);
+        GameConfig.size = size;
+//        int size = GameConfig.size;
         int initX = GameConfig.getInitMapX();
         int initY = GameConfig.getInitMapY();
-        int size = GameConfig.size;
-
         setBackgroundColor(Color.LTGRAY);
+
         p = new Paint[2];
         p[0] = new Paint();
         p[0].setColor(Color.BLACK);
@@ -102,6 +105,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 .setSm(sm);
         sh = nsdisplay.getNextShape(); // 도형 생성
     }
+
 
     Runnable runnable = new Runnable() {
 
@@ -176,13 +180,11 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
     }
 
-    ;
-
     /* 스레드에서만 호출 ~ */
     public void draw(Canvas canvas) {
         display.drawBackground(canvas, p[0]);
         display.drawDisplay(canvas, p[0]); // 전광판 그리기
-        gMap.drawMapData(canvas, p[0],block); // 맵데이터 그리기
+        gMap.drawMapData(canvas, p[0], block); // 맵데이터 그리기
         nsdisplay.drawNextShapList(canvas, p[0]);
         pad.draw(canvas);
         sh.drawShape(canvas, p[0]);
@@ -203,6 +205,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                         in.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                         getContext().startActivity(in);
                         Activity second = (Activity) getContext();
+                        GameConfig.size = GameConfig.SIZE_DEFAULT;
                         second.finish();
                     }
                 });

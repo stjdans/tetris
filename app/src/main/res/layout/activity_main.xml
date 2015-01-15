@@ -11,41 +11,35 @@
         android:id="@+id/imgView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_weight="3"
         android:src="@drawable/tetris2" />
-
     <Button
         android:id="@+id/start"
-        android:layout_width="140dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1"
-        android:text="게임시작" />
+        android:text="@string/game_start" />
 
     <Button
-        android:layout_width="140dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="대결 모드"
+        android:text="@string/game_fight"
+        android:enabled="false"
         android:id="@+id/fight_bt"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1" />
+        />
 
     <Button
         android:id="@+id/config"
-        android:layout_width="140dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1"
-        android:text="게임설정" />
+        android:text="@string/game_config" />
 
     <Button
         android:id="@+id/result"
-        android:layout_width="140dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
-        android:text="점수보기" />
+        android:text="@string/game_result" />
 
 </LinearLayout>

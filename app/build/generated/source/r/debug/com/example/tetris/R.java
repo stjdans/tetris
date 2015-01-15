@@ -1299,17 +1299,18 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int block=0x7f020033;
-        public static final int ic_launcher=0x7f020034;
-        public static final int sh0=0x7f020035;
-        public static final int sh1=0x7f020036;
-        public static final int sh2=0x7f020037;
-        public static final int sh3=0x7f020038;
-        public static final int sh4=0x7f020039;
-        public static final int sh5=0x7f02003a;
-        public static final int sh6=0x7f02003b;
-        public static final int tetris=0x7f02003c;
-        public static final int tetris2=0x7f02003d;
+        public static final int ani=0x7f020033;
+        public static final int block=0x7f020034;
+        public static final int ic_launcher=0x7f020035;
+        public static final int sh0=0x7f020036;
+        public static final int sh1=0x7f020037;
+        public static final int sh2=0x7f020038;
+        public static final int sh3=0x7f020039;
+        public static final int sh4=0x7f02003a;
+        public static final int sh5=0x7f02003b;
+        public static final int sh6=0x7f02003c;
+        public static final int tetris=0x7f02003d;
+        public static final int tetris2=0x7f02003e;
     }
     public static final class id {
         public static final int FrameLayout1=0x7f090060;
@@ -1351,7 +1352,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f090022;
         public static final int expanded_menu=0x7f090028;
         public static final int fight_bt=0x7f09005a;
-        public static final int fight_frame=0x7f090055;
+        public static final int fight_frame=0x7f090056;
         public static final int gomain=0x7f09005f;
         public static final int group1=0x7f090041;
         public static final int group2=0x7f090046;
@@ -1403,7 +1404,7 @@ containing a value of this type.
         public static final int stage=0x7f090066;
         public static final int start=0x7f090059;
         public static final int submit_area=0x7f09003c;
-        public static final int t1=0x7f090056;
+        public static final int t1=0x7f090055;
         public static final int tView1=0x7f090040;
         public static final int tView2=0x7f090045;
         public static final int tView3=0x7f09004a;
@@ -1475,6 +1476,29 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0b000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000e;
         public static final int abc_toolbar_collapse_description=0x7f0b000f;
+        public static final int block1=0x7f0b0010;
+        public static final int block2=0x7f0b0011;
+        public static final int block3=0x7f0b0012;
+        public static final int col1=0x7f0b0013;
+        public static final int col2=0x7f0b0014;
+        public static final int col3=0x7f0b0015;
+        public static final int game_block=0x7f0b0016;
+        public static final int game_col=0x7f0b0017;
+        public static final int game_config=0x7f0b0018;
+        public static final int game_fight=0x7f0b0019;
+        public static final int game_main=0x7f0b001a;
+        public static final int game_result=0x7f0b001b;
+        public static final int game_result2=0x7f0b001c;
+        public static final int game_row=0x7f0b001d;
+        public static final int game_speed=0x7f0b001e;
+        public static final int game_start=0x7f0b001f;
+        public static final int row1=0x7f0b0020;
+        public static final int row2=0x7f0b0021;
+        public static final int row3=0x7f0b0022;
+        public static final int save=0x7f0b0023;
+        public static final int speed1=0x7f0b0024;
+        public static final int speed2=0x7f0b0025;
+        public static final int speed3=0x7f0b0026;
     }
     public static final class style {
         /** 

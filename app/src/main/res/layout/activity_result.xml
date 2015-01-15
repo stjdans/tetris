@@ -9,10 +9,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="게임 결과"
+        android:text="@string/game_result2"
         android:layout_weight="1"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         
         />
 
@@ -30,8 +30,8 @@
         android:id="@+id/gomain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="메인으로 "
+        android:text="@string/game_main"
+        android:layout_marginBottom="10dp"
         android:layout_weight="1" />
 
 </LinearLayout>

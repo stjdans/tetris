@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="game_start">게임 시작</string>
+    <string name="game_fight">미구현</string>
+    <string name="game_config">게임 설정</string>
+    <string name="game_result">점수 보기</string>
+    <string name="game_result2">게임 결과</string>
+    <string name="game_main">메인으로</string>
 
+    <string name="game_speed">게임속도</string>
+    <string name="game_row">행(세로) 길이</string>
+    <string name="game_col">열(가로) 길이</string>
+    <string name="game_block">블록 크기</string>
+    <string name="row1">9</string>
+    <string name="row2">11</string>
+    <string name="row3">13</string>
+    <string name="col1">7</string>
+    <string name="col2">10</string>
+    <string name="col3">13</string>
 
+    <string name="speed1">느리게</string>
+    <string name="speed2">중간</string>
+    <string name="speed3">빠르게</string>
+    <string name="block1">작게</string>
+    <string name="block2">기본</string>
+    <string name="block3">크게</string>
+    <string name="save">설정저장</string>
 </resources>

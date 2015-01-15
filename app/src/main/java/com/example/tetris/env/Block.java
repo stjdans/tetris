@@ -31,4 +31,17 @@ public class Block implements Serializable {
 		bottom += size;
 		row++;
 	}
+
+    @Override
+    public String toString() {
+        return "Block{" +
+                "left=" + left +
+                ", right=" + right +
+                ", top=" + top +
+                ", bottom=" + bottom +
+                ", row=" + row +
+                ", col=" + col +
+                ", size=" + size +
+                '}';
+    }
 }
